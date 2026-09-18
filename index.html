@@ -16,71 +16,175 @@
         h1 { color: #FF6B35; }
         h2 { color: #444; margin-top: 30px; }
         .last-updated { color: #666; font-size: 14px; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+        th { background: #f5f5f5; }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: January 2025</p>
+    <p class="last-updated">
+        Effective date: 5 July 2026<br>
+        This version replaces and supersedes all previous versions of the Inburgering Mate privacy policy.
+    </p>
 
     <h2>Introduction</h2>
     <p>
-        Inburgering Mate ("we", "our", or "the app") is committed to protecting your privacy.
-        This Privacy Policy explains how we handle information when you use our Dutch language learning application.
+        Inburgering Mate ("we", "our", or "the app") is a free study app for the Dutch civic
+        integration exam (inburgeringsexamen). This policy explains exactly what data the app
+        handles, where it goes, and what your choices are. The app has no user accounts, no
+        analytics, no advertising, and no cloud sync. We, the developer, never receive your
+        personal data. Two features do involve third-party processing, and they are described
+        explicitly below: speech recognition (Apple/Google) and grammar checking (LanguageTool).
     </p>
 
-    <h2>Information We Collect</h2>
+    <h2>1. Data Stored Locally on Your Device</h2>
     <p>
-        <strong>We do not collect any personal information.</strong> The app is designed to work entirely offline
-        and does not require user accounts, registration, or any personal data.
-    </p>
-
-    <h2>Data Storage</h2>
-    <p>
-        All data related to your learning progress (such as completed lessons and vocabulary progress)
-        is stored locally on your device only. This data:
+        Your learning data is stored only on your device, in the app's local database:
     </p>
     <ul>
-        <li>Never leaves your device</li>
-        <li>Is not transmitted to any servers</li>
-        <li>Is not accessible to us or any third parties</li>
-        <li>Can be deleted by uninstalling the app</li>
+        <li>Learning progress (completed lessons, vocabulary review status, quiz and exam results, study streaks)</li>
+        <li>App settings (language, level, notification preferences)</li>
+    </ul>
+    <p>
+        This data never leaves your device. It is not uploaded to us or to anyone else, and there
+        is no account or cloud backup operated by the app. If you delete the app, this data is deleted with it.
+    </p>
+
+    <h2>2. Microphone and Speech Recognition (Speaking Practice)</h2>
+    <p>
+        The speaking practice feature uses your device's microphone. It only records when you
+        start a speaking exercise, and it asks for the operating system's microphone permission first.
+    </p>
+    <ul>
+        <li>
+            <strong>Voice recordings:</strong> recordings are saved in the app's temporary storage
+            on your device so you can listen back to your own pronunciation. The app never uploads
+            your recordings to us or to any server. Temporary recordings are cleared by the app and
+            the operating system, and are removed when you uninstall the app.
+        </li>
+        <li>
+            <strong>Speech-to-text:</strong> to transcribe what you say, the app uses the speech
+            recognition service built into your operating system (Apple Speech Recognition on iOS,
+            Google speech services on Android). <strong>Depending on your device and settings, this
+            means your voice audio may be sent to and processed on Apple's or Google's servers</strong>,
+            under their own privacy policies:
+            <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> ·
+            <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+        </li>
+        <li>
+            <strong>Your choice:</strong> the microphone and speech recognition are used only for the
+            speaking practice feature and only with your permission. You can deny or revoke the
+            permission at any time in your device settings; the rest of the app works without it.
+        </li>
     </ul>
 
-    <h2>Third-Party Services</h2>
+    <h2>3. Writing Feedback (LanguageTool)</h2>
     <p>
-        The app does not integrate with any third-party analytics, advertising, or tracking services.
-        We do not share any information with third parties because we do not collect any information.
+        When you use the writing feedback feature, the app sends the Dutch text you typed in the
+        exercise to the free LanguageTool grammar-checking service
+        (<code>api.languagetool.org</code>, operated by LanguageTooler GmbH) over an encrypted
+        (HTTPS) connection, so it can return grammar and spelling suggestions.
+    </p>
+    <ul>
+        <li><strong>What is sent:</strong> only the exercise text you wrote and the language code ("nl").</li>
+        <li><strong>What is not sent:</strong> no name, email address, account ID, or device identifier — the app has none of these.</li>
+        <li>We advise you not to include personal details (such as your real name or address) in writing exercises.</li>
+        <li>LanguageTool processes this text under its own privacy policy:
+            <a href="https://languagetool.org/legal/privacy">LanguageTool Privacy Policy</a>.</li>
+        <li>This happens only when you actively request feedback on a writing exercise. If you do not use the writing feedback feature, nothing is sent.</li>
+    </ul>
+
+    <h2>4. Notifications</h2>
+    <p>
+        The app can show a daily study reminder. These are local notifications, scheduled entirely
+        on your device — no push-notification service and no server is involved. Reminders are
+        opt-in and can be turned off at any time in the app's settings or your device settings.
     </p>
 
-    <h2>In-App Purchases</h2>
+    <h2>5. What the App Does Not Do</h2>
+    <ul>
+        <li>No user accounts or registration</li>
+        <li>No analytics or usage tracking</li>
+        <li>No advertising and no advertising identifiers</li>
+        <li>No selling or sharing of data with third parties for their own purposes</li>
+        <li>No purchases or payment processing — the app is entirely free</li>
+    </ul>
+
+    <h2>6. Summary of Data Flows</h2>
+    <table>
+        <tr><th>Data</th><th>Where it goes</th><th>Purpose</th></tr>
+        <tr><td>Learning progress and settings</td><td>Stays on your device</td><td>Track your study progress</td></tr>
+        <tr><td>Voice recordings (speaking practice)</td><td>Temporary storage on your device; never uploaded by the app</td><td>Let you replay your pronunciation</td></tr>
+        <tr><td>Voice audio during speech-to-text</td><td>Apple or Google speech recognition (may be processed on their servers)</td><td>Transcribe your spoken Dutch</td></tr>
+        <tr><td>Written exercise text</td><td>LanguageTool (api.languagetool.org), via HTTPS</td><td>Grammar and spelling feedback</td></tr>
+        <tr><td>Notification schedule</td><td>Stays on your device</td><td>Daily study reminder (opt-in)</td></tr>
+    </table>
+
+    <h2>7. External Links</h2>
     <p>
-        If you make an in-app purchase to unlock premium features, the transaction is processed
-        entirely by Apple (App Store) or Google (Play Store). We do not have access to your
-        payment information. Please refer to Apple's or Google's privacy policies for information
-        about how they handle payment data.
+        The app contains links to official websites about the inburgering exam, such as
+        inburgeren.nl, duo.nl and rijksoverheid.nl. When you open such a link, your browser
+        connects to that website, and the website's own privacy policy applies. We are not
+        responsible for the content or privacy practices of external websites.
     </p>
 
-    <h2>Children's Privacy</h2>
+    <h2>8. Data Retention and Deletion</h2>
+    <ul>
+        <li>Learning progress is kept on your device until you delete it.</li>
+        <li>You can delete your progress at any time using the reset options in the app's Settings (reset vocabulary progress, reset grammar progress, or reset all progress).</li>
+        <li>Voice recordings are stored temporarily and are not kept permanently.</li>
+        <li>Uninstalling the app removes all app data from your device.</li>
+        <li>Because we never receive your data, there is nothing for us to delete on any server. For data processed by Apple, Google, or LanguageTool, their retention policies apply (see the links above).</li>
+    </ul>
+
+    <h2>9. Legal Basis for Processing (GDPR)</h2>
     <p>
-        Our app does not collect personal information from anyone, including children under 13.
-        The app is safe for users of all ages.
+        For users in the European Union, the legal bases under the General Data Protection
+        Regulation (GDPR) are:
+    </p>
+    <ul>
+        <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) for the use of your microphone and speech recognition — you grant this via the operating system's permission prompt and can withdraw it at any time in your device settings.</li>
+        <li><strong>Performance of the service you request</strong> and our <strong>legitimate interest</strong> in providing it (Art. 6(1)(b) and 6(1)(f) GDPR) for sending your exercise text to LanguageTool when you ask for writing feedback.</li>
+        <li>Data stored locally on your device is under your own control and is not transmitted to us.</li>
+    </ul>
+
+    <h2>10. Your Rights</h2>
+    <p>
+        Under the GDPR you have the right to access, rectify, erase, restrict, and object to the
+        processing of your personal data, and the right to data portability. Because your data is
+        stored on your own device, you can exercise most of these rights directly: view your
+        progress in the app, reset it in Settings, or uninstall the app. For questions, contact us
+        at the address below. You also have the right to lodge a complaint with your data
+        protection authority — in the Netherlands, the Autoriteit Persoonsgegevens
+        (<a href="https://autoriteitpersoonsgegevens.nl">autoriteitpersoonsgegevens.nl</a>).
     </p>
 
-    <h2>Changes to This Policy</h2>
+    <h2>11. Children's Privacy</h2>
     <p>
-        We may update this Privacy Policy from time to time. Any changes will be posted on this page
-        with an updated revision date.
+        Inburgering Mate is intended for adults preparing for the Dutch civic integration exam,
+        but its content is suitable for all ages. The app does not knowingly collect personal
+        information from children — or from anyone else. If you believe a child has submitted
+        personal data through the app in some way, please contact us and we will help address it.
+    </p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time, for example when app features change.
+        Changes will be posted on this page with an updated effective date. This version
+        (5 July 2026) supersedes all prior versions, including versions that described in-app
+        purchases — the app no longer offers any purchases.
     </p>
 
     <h2>Contact Us</h2>
     <p>
-        If you have any questions about this Privacy Policy, please contact us at:<br>
-        <strong>Email:</strong> inburgeringmate@gmail.com
+        If you have any questions about this Privacy Policy or your data, please contact us at:<br>
+        <strong>Email:</strong> rnjsxodyd@gmail.com
     </p>
 
     <hr style="margin-top: 40px; border: none; border-top: 1px solid #ddd;">
     <p style="font-size: 12px; color: #666;">
-        Inburgering Mate - Dutch Language Learning App
+        Inburgering Mate - Dutch Inburgering Exam Preparation App
     </p>
 </body>
 </html>
